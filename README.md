@@ -1,13 +1,13 @@
 # Devops
 <h1>Automating Infrastructure using Terraform.</h1>
 
-DESCRIPTION
+<b>DESCRIPTION</b>
 
 Use Terraform to provision infrastructure
 
  
 
-Description:
+<b>Description:</b>
 
 Nowadays, infrastructure automation is critical. We tend to put the most emphasis on software development processes, but infrastructure deployment strategy is just as important. Infrastructure automation not only aids disaster recovery, but it also facilitates testing and development.
 
@@ -21,10 +21,12 @@ Tools required: Terraform, AWS account with security credentials, Keypair
 
  
 
-Expected Deliverables:
+<b>Expected Deliverables:</b>
+<ol>
+ 
+<li>Launch an EC2 instance using Terraform</li>
 
-Launch an EC2 instance using Terraform
+<li>Connect to the instance</li>
 
-Connect to the instance
-
-Install Jenkins, Java, and Python in the instance
+<li>Install Jenkins, Java, and Python in the instance</li>
+ </ol>
