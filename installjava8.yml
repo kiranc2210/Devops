@@ -1,0 +1,18 @@
+---
+- hosts: target
+  gather_facts: no
+  tasks:
+    - name: Update APT package manager repositories cache
+      become: true
+      yum:
+        name: '*'
+        state: latest
+        update_cache: yes
+    - name: Install Java using Ansible
+      become: yes
+      yum:
+        name: "{{ packages }}"
+        state: present
+      vars:
+        packages:
+           - java-1.8.0-openjdk-devel
