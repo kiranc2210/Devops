@@ -1,0 +1,45 @@
+libre@libre-Latitude-5520:~$ sudo wget https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
+[sudo] password for libre: 
+--2022-05-18 00:56:34--  https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
+Resolving releases.hashicorp.com (releases.hashicorp.com)... 151.101.193.183, 151.101.129.183, 151.101.65.183, ...
+Connecting to releases.hashicorp.com (releases.hashicorp.com)|151.101.193.183|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16519860 (16M) [application/zip]
+Saving to: ‘terraform_0.12.18_linux_amd64.zip’
+
+terraform_0.12.18_l 100%[===================>]  15.75M  2.57MB/s    in 6.3s    
+
+2022-05-18 00:56:40 (2.50 MB/s) - ‘terraform_0.12.18_linux_amd64.zip’ saved [16519860/16519860]
+
+libre@libre-Latitude-5520:~$ sudo unzip terraform_0.12.18_linux_amd64.zip
+Archive:  terraform_0.12.18_linux_amd64.zip
+  inflating: terraform               
+libre@libre-Latitude-5520:~$ ls
+Desktop    examples.desktop  Public     terraform_0.12.18_linux_amd64.zip
+Documents  Music             Templates  Videos
+Downloads  Pictures          terraform
+libre@libre-Latitude-5520:~$ sudo mv terraform /usr/local/bin
+libre@libre-Latitude-5520:~$ cd usr/local/bin
+bash: cd: usr/local/bin: No such file or directory
+libre@libre-Latitude-5520:~$ ls
+Desktop    examples.desktop  Public                             Videos
+Documents  Music             Templates
+Downloads  Pictures          terraform_0.12.18_linux_amd64.zip
+libre@libre-Latitude-5520:~$ cd /usr
+libre@libre-Latitude-5520:/usr$ ls
+bin  games  include  lib  libexec  local  sbin  share  src
+libre@libre-Latitude-5520:/usr$ cd local/
+libre@libre-Latitude-5520:/usr/local$ ls
+bin  etc  games  include  lib  man  sbin  share  src
+libre@libre-Latitude-5520:/usr/local$ cd bin/
+libre@libre-Latitude-5520:/usr/local/bin$ ls
+terraform
+libre@libre-Latitude-5520:/usr/local/bin$ cd /
+libre@libre-Latitude-5520:/$ terraform -v
+Terraform v0.12.18
+
+Your version of Terraform is out of date! The latest version
+is 1.1.9. You can update by downloading from https://www.terraform.io/downloads.html
+libre@libre-Latitude-5520:/$ ^C
+libre@libre-Latitude-5520:/$ 
+
